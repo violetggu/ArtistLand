@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist Land</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -15,75 +16,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
 </head>
 
-<>
-    <div class="container" id="Home">
-        <div class="leftbar">
-            <img src="./image/land.png" alt="">
-            <a href="#Home" class="hover-underline-animation">Home</a>
-            <a href="#aboutUs" class="hover-underline-animation">About Us</a>
-            <a href="" class="hover-underline-animation">Our App</a>
-            <a href="" class="hover-underline-animation">Contacts</a>
-        </div>
-        <div class="rightbar">
-            <a href="" class="login">Log in</a>
-            <a href="" class="signup">Sign Up</a>
-        </div>
-        <div class="mockup">
-            <img src="./image/⭐ Design Mockup.jpg" alt="">
-        </div>
-        <div class="downloadOption">
-            <i class="fa-solid fa-download"></i>
-            <a href="">Download it for free!</a>
-            <div class="gridcontainer">
-                <div class="griditemdownload">
-                    <div>23000K</div>
-                    <div>Downloads</div>
-                </div>
-                <div class="griditemlikes">
-                    <div>500K</div>
-                    <div>Likes</div>
-                </div>
-                <div class="griditemusers">
-                    <div>1345</div>
-                    <div>Users</div>
-                </div>
+<body>
+    <div class="wrapper">
+        <nav class="navWrapper">
+            <div class="leftbar">
+                <img src="./image/land.png" alt="">
+                <a href="#Home" class="hover-underline-animation">Home</a>
+                <a href="#aboutUs" class="hover-underline-animation">About Us</a>
+                <a href="#ourApp" class="hover-underline-animation">Our App</a>
+                <a href="#contactUs" class="hover-underline-animation">Contacts</a>
             </div>
-            <div class="store">
-                <a href="">Available on the </a>
-                <div class="gridStore">
-                    <div class="gridAppStore">
-                        <i class="fa-brands fa-app-store-ios"></i>
-                        <a>App Store</a>
+            <div class="rightbar">
+                <a href="" class="login">Log in</a>
+                <a href="" class="signup">Sign Up</a>
+            </div>
+        </nav>
+        <div class="home" id="Home">
+            <div class="mockup">
+                <div class="mockupText">
+                    <a href="">Connect with your Best Artist</a>
+                    <div class="btn"><a href="">Get Started</a></div>
+                </div>
+                <img src="./image/mockup.png" alt="">
+            </div>
+            <div class="downloadOption">
+                <i class="fa-solid fa-download"></i>
+                <a href="">Download it for free!</a>
+                <div class="gridcontainer">
+                    <div class="griditemdownload">
+                        <div>23000K</div>
+                        <div>Downloads</div>
                     </div>
-                    <div class="gridPlayStore">
-                        <i class="fa-brands fa-google-play"></i>
-                        <a>Play store</a>
+                    <div class="griditemlikes">
+                        <div>500K</div>
+                        <div>Likes</div>
+                    </div>
+                    <div class="griditemusers">
+                        <div>1345</div>
+                        <div>Users</div>
                     </div>
                 </div>
+                <div class="store">
+                    <a href="">Available on the </a>
+                    <div class="gridStore">
+                        <div class="gridAppStore">
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <a>App Store</a>
+                        </div>
+                        <div class="gridPlayStore">
+                            <i class="fa-brands fa-google-play"></i>
+                            <a>Play store</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="floattext">
-            <div> Connect with your </div>
-            <div> BEST ARTIST </div>
+        <div class="aboutUs" id="aboutUs">
+            <img src="./image/undraw_team_spirit_re_yl1v.svg" alt="">
+
+            <div class="aboutUs-rightContent">
+                <div class="title">
+                    Artist Land
+                </div>
+
+                <div class="para">
+                    We are a team who want to help connecting between artists and customers. So, we design this app mainly for freelance digital artist who are searching for customers and vice versa. We hope that we can help you to find your desired artist through this app
+                    and find your customers who are willing to pay for your worthy arts. We welcome any feedbacks.
+                </div>
+            </div>
         </div>
-        <div class="floatButton">
-            <a href="">Get Started</a>
+        <div class="ourApp" id="ourApp">
+            <div class="ourApp-leftcontent">
+                <div class="title">
+                    Our App
+                </div>
+                <div class="para">
+                    Our app will help you find your desired artist and provide a great user experience. You can find the artist through search bar. Before you contact the artist, you might have an account for our app. You can also add your banking accounts so that you can
+                    pay the artist online.
+                </div>
+            </div>
+            <img src="./image/undraw_Investor_update_re_qnuu copy.png" alt="">
+        </div>
+        <div class="contactUs" id="contactUs">
+            <div class="contactUs-rightcontent">
+                <div class="title">Contact Us</div>
+                <div class="contact">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="">artistland@gmail.com</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="">09123456789</a>
+                    </div>
+                </div>
+            </div>
+            <img src="./image/undraw_contact_us_re_4qqt.svg" alt="">
+        </div>
+        <div class="footer">
+            <div>Terms and Conditions Privacy Policy </div>
+            <div> Copyright 2022 Artist Land All rights reserved </div>
         </div>
     </div>
-    <div class="aboutUs" id="aboutUs">
-        <img src="./image/undraw_team_spirit_re_yl1v.svg" alt="">
-
-        <div class="aboutUs-rightContent">
-            <div class="title">
-                Artist Land
-            </div>
-
-            <div class="para">
-                We are a team who want to help connecting between artists and customers. So, we design this app mainly for freelance digital artist who are searching for customers and vice versa. We hope that we can help you to find your desired artist through this app
-                and find your customers who are willing to pay for your worthy arts. We welcome any feedbacks.
-            </div>
-        </div>
-    </div>
-    </body>
+</body>
 
 </html>
