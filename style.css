@@ -2,6 +2,36 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2rem;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #C3B7ED;
+    border-radius: 2rem;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #7b0c7a;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -11,14 +41,18 @@ html {
     display: flex;
     justify-content: space-around;
     background-color: rgb(233, 210, 255);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
-    border-bottom: 1px solid #0087ca;
+    /* border-bottom: 1px solid #0087ca; */
+    /* box-shadow: 5px 10px 8px rgb(123, 12, 122, 0.1); */
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
 }
 
 .leftbar {
     display: flex;
-    height: 100px;
+    height: 5rem;
     justify-content: space-around;
     align-items: center;
     margin-left: 50px;
@@ -26,21 +60,21 @@ html {
 
 .leftbar img {
     width: 200px;
-    height: 100px;
+    height: 5rem;
     margin-right: 10px;
 }
 
 .leftbar a {
     text-decoration: none;
     margin-right: 30px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
 .rightbar {
     display: flex;
-    height: 100px;
+    height: 5rem;
     justify-content: space-around;
     align-items: center;
     margin-right: 50px;
@@ -49,7 +83,7 @@ html {
 .rightbar a {
     text-decoration: none;
     margin-right: 30px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: #0087ca;
@@ -108,7 +142,7 @@ html {
 .home {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10rem;
+    padding-top: 3rem;
 }
 
 .mockup {
@@ -279,8 +313,7 @@ html {
 .aboutUs {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 7.25rem;
-    padding: 0 3rem 0 3rem;
+    padding: 7.25rem 3rem 0 3rem;
 }
 
 .aboutUs img {
