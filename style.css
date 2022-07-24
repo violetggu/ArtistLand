@@ -6,7 +6,7 @@ html {
 /* width */
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.7rem;
 }
 
 
@@ -21,7 +21,7 @@ html {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #C3B7ED;
+    background: #5a0859;
     border-radius: 2rem;
 }
 
@@ -410,4 +410,29 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:768px) {
+    .navWrapper .leftbar a,
+    .navWrapper .rightbar a {
+        font-size: 0.55rem;
+    }
+    .home {
+        width: fit-content;
+    }
+}
+
+@media (max-width:452) {
+    .navWrapper .leftbar a,
+    .navWrapper .rightbar a {
+        font-size: 0.5rem;
+    }
+    .home {
+        width: fit-content;
+    }
+    .navWrapper {}
+    .mockup {
+        width: 15em;
+        height: 5em;
+    }
 }
